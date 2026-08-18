@@ -290,13 +290,8 @@
   .socials a:hover{background:var(--crema);border-color:var(--crema);transform:translateY(-3px)}
   .socials a:hover svg{stroke:var(--oscuro);fill:var(--oscuro)}
   .socials svg{width:18px;height:18px;stroke:var(--crema);fill:none;stroke-width:1.6}
-  .foot-map{border-radius:16px;overflow:hidden;border:1px solid var(--linea);height:170px;position:relative;
-    background:linear-gradient(140deg,var(--oscuro-3),var(--azul-oscuro));display:grid;place-items:center;margin-top:1rem}
-  .foot-map .pin{width:40px;height:40px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);
-    background:var(--crema);position:relative;box-shadow:0 8px 20px rgba(0,0,0,.4)}
-  .foot-map .pin::after{content:"";position:absolute;top:12px;left:12px;width:16px;height:16px;border-radius:50%;
-    background:var(--oscuro)}
-  .foot-map small{position:absolute;bottom:12px;left:14px;color:var(--blanco-soft);font-size:.78rem;letter-spacing:.05em}
+  .foot-map{border-radius:16px;overflow:hidden;border:1px solid var(--linea);height:220px;position:relative;margin-top:1rem}
+  .foot-map iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(20%) contrast(1.05)}
   .foot-bottom{border-top:1px solid var(--linea);padding:1.5rem 0;display:flex;justify-content:space-between;
     align-items:center;flex-wrap:wrap;gap:1rem}
   .foot-bottom p{font-size:.84rem;color:var(--blanco-mute)}
@@ -650,9 +645,13 @@
           <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> hola@nexafisio.com</li>
           <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Lun a Sáb · 7:00 a.m. – 7:00 p.m.</li>
         </ul>
-        <div class="foot-map" role="img" aria-label="Mapa de ubicación de NEXA en Medellín">
-          <div class="pin"></div>
-          <small>Laureles - Estadio · Medellín, Antioquia</small>
+        <div class="foot-map">
+          <iframe
+            src="https://www.google.com/maps?q=Cl.+53+%2371-11,+Laureles+-+Estadio,+Medell%C3%ADn,+Antioquia,+Colombia&output=embed"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación NEXA Centro de Fisioterapia"></iframe>
         </div>
       </div>
     </div>
